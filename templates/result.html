@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h2><strong>Upišite se</strong></h2>
+    </div>
+    <p>Upisi se vrše svakim radnim danom, a možete i online.</p>
+    <div class="alert alert-success" role="alert">
+        <h1>Upisani ste</h1>
+        <h2>Samo nebo je granica</h2>
+    </div>
+    <h3>Your username and email:</h3>
+    {% for key,value in result.items() %}
+    <h3>{{value}}</h3>
+    {% endfor %}
+</div>
+</body>
+</html>
+{% endblock %}
